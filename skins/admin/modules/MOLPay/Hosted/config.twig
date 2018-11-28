@@ -1,0 +1,62 @@
+<style>
+.settings-table .note {
+    font-size: 14px;
+    margin-bottom: 14px;
+    float: none;
+}
+</style>
+
+<table cellspacing="1" cellpadding="5" class="settings-table">
+  <tr>
+    <td colspan="2">
+      <p class="note">{{ t('Dont have an account? Sign Up Now', { link: 'https://www.molpay.com/v3/sign-up/'})|raw }}</p>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="setting-name">
+        <label for="settings_merchantid">{{ t('Merchant ID') }}</label>
+    </td>
+    <td>
+        <input type="text" id="settings_merchantid" name="settings[merchantID]" value="{{ this.paymentMethod.getSetting('merchantID') }}" class="validate[required,maxSize[255]]" />
+    </td>
+  </tr>
+  <tr>
+    <td class="setting-name">
+        <label for="settings_verifykey">{{ t('Verify Key') }}</label>
+    </td>
+    <td>
+        <input type="text" id="settings_verifykey" name="settings[verifykey]" size="64" value="{{ this.paymentMethod.getSetting('verifykey') }}" class="validate[required,maxSize[255]]" />
+    </td>
+  </tr>
+  <tr>
+    <td class="setting-name">
+        <label for="settings_privatekey">{{ t('Private Key') }}</label>
+    </td>
+    <td>
+        <input type="text" id="settings_privatekey" name="settings[privatekey]" size="64" value="{{ this.paymentMethod.getSetting('privatekey') }}" class="validate[required,maxSize[255]]" />
+    </td>
+  </tr>
+  <tr>
+    <td class="setting-name">
+    <label for="settings_mode">{{ t('Processing mode') }}</label>
+    </td>
+    <td>
+    <select id="settings_mode" name="settings[mode]">
+      <option value="test" {% if this.isSelected(this.paymentMethod.getSetting('mode'), 'test') %} selected="selected" {% endif %}>Test mode</option>
+      <option value="live" {% if this.isSelected(this.paymentMethod.getSetting('mode'), 'live') %} selected="selected" {% endif %}>Live mode</option>
+    </select>
+    </td>
+  </tr>
+  <tr>
+    <td class="setting-name">
+    <label for="settings_logs">{{ t('Logs') }}</label>
+    </td>
+    <td>
+    <select id="settings_logs" name="settings[logs]">
+      <option value="1" {% if this.isSelected(this.paymentMethod.getSetting('logs'), '1') %} selected="selected" {% endif %}>On</option>
+      <option value="0" {% if this.isSelected(this.paymentMethod.getSetting('logs'), '0') %} selected="selected" {% endif %}>Off</option>
+    </select>
+    </td>
+  </tr>
+</table>

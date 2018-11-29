@@ -18,6 +18,9 @@ changing the **Major Version** to `5.2` in *Main.php*)
 1. Under **Online methods** category, click **Add payment method** and select **MOLPay - Hosted Integration** from the list
 1. Enter your credentials and configure the plugin to your liking
 1. Go back to **Store setup -> Payment methods** and toggle the **MOLPay - Hosted Integration** payment method from **INACTIVE** to **ACTIVE**
+1. Login into **MOLPay Portal** and set the *Callback URL* as below:
+   + HTTP: `http://{REPLACE_WITH_YOUR_DOMAIN}/xcart/?target=callback&txn_id_name=orderid`
+   + HTTPS: `https://{REPLACE_WITH_YOUR_DOMAIN}/xcart/?target=callback&txn_id_name=orderid`
 
 ## Installation (Manual)
 
@@ -29,6 +32,9 @@ changing the **Major Version** to `5.2` in *Main.php*)
 1. Under **Online methods** category, click **Add payment method** and select **MOLPay - Hosted Integration** from the list
 1. Enter your credentials and configure the plugin to your liking
 1. Go back to **Store setup -> Payment methods** and toggle the **MOLPay - Hosted Integration** payment method from **INACTIVE** to **ACTIVE**
+1. Login into **MOLPay Portal** and set the *Callback URL* as below:
+   + HTTP: `http://{REPLACE_WITH_YOUR_DOMAIN}/xcart/?target=callback&txn_id_name=orderid`
+   + HTTPS: `https://{REPLACE_WITH_YOUR_DOMAIN}/xcart/?target=callback&txn_id_name=orderid`
 
 *Note:* If you have trouble with your credentials configuration, get in touch with our [support](support@molpay.com) team
 

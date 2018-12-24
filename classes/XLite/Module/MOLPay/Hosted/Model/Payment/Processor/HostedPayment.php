@@ -65,7 +65,7 @@ class HostedPayment extends \XLite\Model\Payment\Base\WebBased
         $vcode = md5(number_format($this->transaction->getValue(), 2, '.', '').$this->getSetting('merchantID').$this->getTransactionId().$this->getSetting('verifykey'));
         
         $fields = [
-            'amount'        => $this->transaction->getValue(),
+            'amount'        => number_format(->transaction->getValue(), 2, '.', ''),
             'orderid'       => $this->getTransactionId(),
             'bill_name'     => $this->getProfile()->getBillingAddress()->getFirstname().' '.$this->getProfile()->getBillingAddress()->getLastname(),
             'bill_email'    => $this->getProfile()->getLogin(),

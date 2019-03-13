@@ -1,13 +1,3 @@
-WARNING!
-========
-
-<h3>Please be informed that this library has been obsoleted and marked as End-of-Life product. 
-
-
-------------------------------------------------------
-
-
-
 # MOLPay Gateway Module for X-Cart 5.x
 
 This is a Payment Module for X-Cart, that gives you the ability to process 

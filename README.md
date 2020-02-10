@@ -1,7 +1,7 @@
-# MOLPay Gateway Module for X-Cart 5.x
+# Razer Merchant Services Gateway Module for X-Cart 5.x
 
 This is a Payment Module for X-Cart, that gives you the ability to process 
-payments through MOLPay's Payment Gateway - Hosted.
+payments through Razer Merchant Services 's Payment Gateway - Hosted.
 
 ## Requirements
 

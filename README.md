@@ -1,5 +1,7 @@
 # Razer Merchant Services Gateway Module for X-Cart 5.x
 
+<img src="https://user-images.githubusercontent.com/38641542/74402822-53530c80-4e60-11ea-9cc6-303a86733dd0.jpg">
+
 This is a Payment Module for X-Cart, that gives you the ability to process 
 payments through Razer Merchant Services 's Payment Gateway - Hosted.
 
@@ -36,6 +38,6 @@ changing the **Major Version** to `5.2` in *Main.php*)
    + HTTP: `http://{REPLACE_WITH_YOUR_DOMAIN}/xcart/?target=callback&txn_id_name=orderid`
    + HTTPS: `https://{REPLACE_WITH_YOUR_DOMAIN}/xcart/?target=callback&txn_id_name=orderid`
 
-*Note:* If you have trouble with your credentials configuration, get in touch with our [support](support@molpay.com) team
+*Note:* If you have trouble with your credentials configuration, get in touch with our [support](support-sa@razer.com) team
 
 You're now ready to process payments through our gateway.

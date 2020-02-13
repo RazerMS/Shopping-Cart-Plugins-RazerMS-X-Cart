@@ -1,6 +1,6 @@
 # Razer Merchant Services Gateway Module for X-Cart 5.x
 
-<img src="https://user-images.githubusercontent.com/38641542/74402822-53530c80-4e60-11ea-9cc6-303a86733dd0.jpg">
+<img src="https://user-images.githubusercontent.com/38641542/74424977-ed7d7980-4e8d-11ea-9312-3c52bf90388c.jpg">
 
 This is a Payment Module for X-Cart, that gives you the ability to process 
 payments through Razer Merchant Services 's Payment Gateway - Hosted.

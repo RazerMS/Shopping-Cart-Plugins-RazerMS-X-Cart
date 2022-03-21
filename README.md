@@ -1,4 +1,4 @@
-# [Plugins] – RazerMS X-Cart 5.x
+# [Shopping Cart Plugins] – RazerMS X-Cart 5.x
 
 <img src="https://user-images.githubusercontent.com/38641542/74424977-ed7d7980-4e8d-11ea-9312-3c52bf90388c.jpg">
 
